@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Temperatur Converter</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+	<style>
+		
+		#result,#loading
+		{
+			display: none;
+		}
+
+	</style>
+</head>
+<body class="bg-dark">
+	
+	<div class="container">
+		<div class="row">		
+			<div class="col-md-6 mx-auto py-5">
+				<div class="card card-body">
+					<h1 class="display-5 pb-3 text-center">Temperature Convertor</h1>
+					<form class="form py-3 px-3">
+						<div class="form-group" id="form-temp">
+							<label for="Enter Temperature">Enter Temperature</label>
+							<div class="input-group">
+								<div class="input-group-text">$</div>
+								<input type="text" class="form-control" id="temp">
+							</div>
+							<br>
+							<!-- <span id="message"></span> -->
+						</div>
+						<div class="form-group">
+							<label for="Enter Temperature">Convert</label>
+							<div class="input-group">
+								<div class="input-group-text">Option</div>
+								<select id="option" class="form-control">
+									<option value="Celcious">Celcious</option>
+
+									<option value="Ferenite">Ferenite</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<input type="submit" name="submit" value="Calculate" class="btn btn-dark btn-block" id="button">
+						</div>
+					</form>
+					<hr>
+					<div id="loading">
+						<img src="loading.gif" class="img-fluid">
+					</div>
+					<div id="result" class="pt-4">
+					
+						<form>
+							<div class="form-group">
+							<label for="Enter Temperature">Result</label>
+								<input type="text" name="temp" class="form-control" disabled id="rest">
+							</div>
+						</div>
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	<script src="app.js"></script>
+</body>
+</html>
